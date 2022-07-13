@@ -23,16 +23,43 @@
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
-
-
 </head>
 
 <body>
-  <main>
-    <h1>Weather App</h1>
-    <p>Let's get ready to rock!</p>
+  <main class="default-bg">
+    <nav>
+      <div class="nav-inner">
+        <span>Weather Walrus</span>
+        <span>Built by Beasleybytes</span>
+      </div>
+    </nav>
+    <div class="content">
+        <div class="core-wrapper">
+          <form class="location-form">
+            <input type="number" class="user-location" name="user-location" placeholder="Enter Zip Code" max="99999" />
+          </form>
+          <h1 class="user-city">San Francisco</h1>
+          <h5 class="user-condition">Sunny</h5>
+          <span class="user-temperature">72</span>
+        </div>
+        <div class="forecast-wrapper hidden">
+          <h4>Looking Ahead...</h4>
+          <div class="weather-mini-wrapper">
+            <div>
+              <h6 class="first-tomorrow">.</h6>
+              <span class="first-high">.</span>
+              <span class="first-low">.</span>
+            </div>
+            <div>
+              <h6 class="second-tomorrow">.</h6>
+              <span class="second-high">.</span>
+              <span class="second-low">.</span>
+            </div>
+          </div>
+        </div>
+    </div>
   </main>
 
-  <script src="./js/script.js"></script>
+  <script src="./js/forecast.js"></script>
 </body>
 </html>

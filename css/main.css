@@ -1,12 +1,112 @@
-body {
-    text-align:center;
+:root {
+    font-size: 62.5%;
 }
+
+body {
+    font-size: 1.6rem;
+    text-align:center;
+    height: 100vh;
+}
+
+h1 {font-size: 3rem;}
+h2 {font-size: 2.8rem;}
+h3 {font-size: 2.6rem;}
+h4 {font-size: 2.4rem;}
+h5 {font-size: 2.2rem;}
+h6 {font-size: 2rem;}
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
     width: 100%;
+    height: 100%;
+}
+
+.default-bg {
+    background: #3da7f2;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    padding: .3em 0em;
+}
+
+.nav-inner {
+    width: 100%;
+    max-width: 720px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    width: 100%;
+    max-width: 720px;
+    height: 100%;
+    padding: 0em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0em;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+input {
+    margin-bottom: 3em;
+    padding: .3em .5em;
+    text-align: center;
+    border-radius: 3px;
+    color: #000;
+    border: 0;
+    outline: 1px solid rgba(0,0,0,.3);
+    background: rgba(0,0,0,.1);
+}
+
+input:focus {
+    outline: 2px solid rgba(0,0,0,.5);
+}
+
+.user-temperature {
+    font-size: 10rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.little-degree {
+    font-size: 6rem;
+    margin-bottom: .3em;
+}
+
+.core-wrapper {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.forecast-wrapper {
+    justify-self: flex-end;
+    width: 100%;
+}
+
+.weather-mini-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.weather-mini-wrapper div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
