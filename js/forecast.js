@@ -25,7 +25,7 @@ firstTomorrowText = days[todayNum+1];
 secondTomorrowText = days[todayNum+2];
 
 const getCity = async (loc) => {
-    const baseUrl = 'http://api.weatherapi.com/v1/forecast.json';
+    const baseUrl = 'https://api.weatherapi.com/v1/forecast.json';
     const query = `?key=${key}&q=${loc}&days=7&aqi=no&alerts=no`;
 
     const response = await fetch(baseUrl + query);
