@@ -11,9 +11,13 @@ const secondTomorrow = document.querySelector('.second-tomorrow');
 const secondTomorrowHigh = document.querySelector('.second-high');
 const secondTomorrowLow = document.querySelector('.second-low');
 
+const geoLoc = navigator.geolocation.getCurrentPosition;
+console.log(geoLoc);
 
 const timeLord = new Date();
 const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+console.log();
 
 todayNum = timeLord.getDay();
 todayText = days[todayNum];
